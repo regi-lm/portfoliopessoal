@@ -134,6 +134,65 @@ h1 {
     font-size: 1.1rem;
 }
 
+/* HABILIDADES */
+.habilidades {
+    padding: 6rem 2rem;
+}
+
+.habilidades-titulo {
+    font-size: 2rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.habilidades-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/*
+.habilidades-track {
+  display: flex;
+  width: calc(250px * 12); ajuste conforme a quantidade de skills
+  animation: scroll 25s linear infinite;
+}*/
+
+.habilidades-track {
+  display: flex;
+  width: max-content; /* ajuste conforme a quantidade de skills */
+  animation: scroll 15s linear infinite;
+}
+
+.habilidade {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.habilidade img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+
+.habilidade img:hover {
+  transform: scale(1.1);
+}
+
+.habilidade span {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--claro);
+}
+
 /* PROJETOS */
 .projetos {
     padding: 6rem 2rem;
@@ -261,4 +320,14 @@ h1 {
     50% {
         transform: translateY(-20px);
     }
+}
+
+/* EFEITO DE LOOP INFINITO PARA HABILIDADES */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
 }
