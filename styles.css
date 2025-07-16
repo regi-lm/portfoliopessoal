@@ -161,7 +161,7 @@ h1 {
 
 .habilidades-track {
   display: flex;
-  width: max-content; /* ajuste conforme a quantidade de skills */
+  width: calc(250px * 12); /* ajuste conforme a quantidade de skills */
   animation: scroll 15s linear infinite;
 }
 
