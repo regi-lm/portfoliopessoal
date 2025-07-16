@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Reginaldo Lima | Portfólio</title>
+  </head>
+  <body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+      <ul class="menu">
+        <li>
+          <a href="#inicio" class="menu-link">Início</a>
+        </li>
+        <li>
+          <a href="#sobre" class="menu-link">Sobre</a>
+        </li>
+        <!-- <li>
+                <a href="#habilidades">Habilidades</a>
+            </li> -->
+        <li>
+          <a href="#projetos" class="menu-link">Projetos</a>
+        </li>
+        <li>
+          <a href="#contatos" class="menu-link">Contato</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+      <img
+        src="./images/foto formal.png"
+        alt="Foto formal"
+        class="foto-perfil"
+      />
+      <h1>Reginaldo Lima</h1>
+      <p class="cabecalho-sub-titulo">Desenvolvedor Front End</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+      <h2 class="sobre-titulo">Sobre mim</h2>
+      <div class="sobre-caixa">
+        <p class="sobre-paragrafo">
+          Olá, sou um Desenvolvedor Front-end com experiência na criação de
+          interfaces modernas, responsivas e funcionais. Utilizo tecnologias
+          como HTML, CSS, JavaScript, React, Next.js e Node.js, com foco em
+          usabilidade e performance. Perfil proativo, organizado, com facilidade
+          em comunicação e resolução de problemas. Também disponível para atuar
+          nas áreas de Análise de Sistemas e Administração.
+        </p>
+      </div>
+    </section>
+
+    <!-- 
+    <section id="habilidades" class="habilidades">
+        <h2 class="habilidades">Minhas habilidades</h2>
+
+    </section>
+    -->
+
+    <section id="projetos" class="projetos">
+      <h2 class="projetos-titulo">Meus projetos</h2>
+
+      <div class="projetos-caixa">
+
+        <div class="projetos-card">
+            <a href="https://barbearialosparcas.vercel.app/" class="card-link" target="_blank">
+            <img
+            src="./images/Print1 barbearia los parcas.jpg"
+            alt="Projeto 1"
+            class="projetos-imagem"
+            />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Site para barbearia</h3>
+            <p class="paragrafo-projetos">
+              Site institucional com foco em usabilidade, serviços, localização
+              via Google Maps e landing page com redes sociais dos barbeiros.
+            </p>
+          </div>
+          </a>
+        </div>
+
+        <div class="projetos-card">
+            <a href="https://cardapioonline-plum.vercel.app/" class="card-link" target="_blank">
+            <img 
+            src="./images/Print1 cardapio online.jpg"
+            alt="Projeto 2"
+            class="projetos-imagem"
+            />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Cardápio online</h3>
+            <p class="paragrafo-projetos">
+              Site institucional com foco em usabilidade, serviços, localização
+              via Google Maps e landing page com redes sociais dos barbeiros.
+            </p>
+          </div>
+          </a>
+        </div>
+
+        <div class="projetos-card">
+            <a href="https://petshopdev-alpha.vercel.app/" class="card-link" target="_blank">
+            <img
+            src="./images/Print1 petdev.jpg"
+            alt="Projeto 3"
+            class="projetos-imagem"
+            />
+          <div class="caixa-textos-projeto">
+            <h3 class="info-projetos">Site para petshop</h3>
+            <p class="paragrafo-projetos">
+              Site institucional com foco em usabilidade, serviços, localização
+              via Google Maps e landing page com redes sociais dos barbeiros.
+            </p>
+          </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+      <h2 class="contatos-titulo">Entre em contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+          <div class="grupo-form">
+            <input placeholder="Nome" class="campo-form" id="nome" />
+          </div>
+
+          <div class="grupo-form">
+            <textarea
+              placeholder="Digite sua mensagem"
+              class="campo-form"
+              rows="6"
+              id="mensagem"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="botao-form">Enviar Mensagem</button>
+
+        </form>
+    </section>
+
+    <script src="./script.js"></script>
+
+  </body>
+
+</html>
