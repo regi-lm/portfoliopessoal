@@ -103,6 +103,7 @@ body {
 /* NOME E SOBRENOME */
 h1 {
     font-size: 3.5rem;
+    text-align: center;
     color: var(--primaria);
     font-weight: bold;
     margin: 20px;
@@ -161,15 +162,24 @@ h1 {
 /*
 .habilidades-track {
   display: flex;
-  width: calc(250px * 12); ajuste conforme a quantidade de skills
+  width: calc(250px * 12); /* ajuste conforme a quantidade de skills
   animation: scroll 25s linear infinite;
 }*/
 
 .habilidades-track {
   display: flex;
-  width: calc(180px * 22); /* ajuste conforme a quantidade de skills */
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+  gap: 20px;
+}
+
+/*
+.habilidades-track {
+  display: flex;
+  width: calc(180px * 22); /* ajuste conforme a quantidade de skills 
   animation: scroll 20s linear infinite;
 }
+*/
 
 .habilidade {
   width: 250px;
@@ -300,6 +310,10 @@ h1 {
     box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
 }
 
+.campo-form.alerta::placeholder {
+    color: red;
+}
+
 .botao-form {
     color: var(--claro);
     background: linear-gradient(45deg, var(--primaria), var(--secundaria));
@@ -335,5 +349,15 @@ h1 {
   }
   100% {
     transform: translateX(-60%);
+  }
+}
+
+/* Animação contínua EFEITO DE LOOP INFINITO PARA HABILIDADES */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
