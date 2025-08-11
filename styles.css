@@ -153,6 +153,13 @@ h1 {
     margin-bottom: 50px;
 }
 
+.habilidades-sub-titulo {
+    font-size: 1.1rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .habilidades-slider {
   overflow: hidden;
   position: relative;
@@ -221,6 +228,13 @@ h1 {
     margin-bottom: 50px;
 }
 
+.projetos-sub-titulo {
+    font-size: 1.1rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 .projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -276,6 +290,13 @@ h1 {
 
 .contatos-titulo {
     font-size: 2rem;
+    color: var(--claro);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contatos-sub-titulo {
+    font-size: 1.1rem;
     color: var(--claro);
     text-align: center;
     margin-bottom: 50px;
